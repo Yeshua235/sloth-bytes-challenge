@@ -1,15 +1,14 @@
 # Sloth Bytes Challenge
 
-Welcome to the Sloth Bytes Challenge repository! This repository contains the solution attempts for the weekly programming challenge by ```Sloth Bytes``` aimed at improving coding  and problem solving skills.
+Welcome to the Sloth Bytes Challenge repository! This repository contains the solution attempts to the weekly programming challenge by ```Sloth Bytes``` aimed at improving coding  and problem solving skills.
 
 
 ## Repository Structure
 
-```
 Each solution attempts is contained within a folder which is named "challenge" followed by the date when the challenge was received. For instance, the folder "challenge-9-9-25/", contains the solution attempt for the challenge received on 9th of September, 2025.
 
 Within the folder for each challenge is a "challenge.md" file which contains the details for that particular challenge, the python file containing the solution to that challenge and a tests.py file containing the tests.
-```
+
 
 ## Getting Started
 
