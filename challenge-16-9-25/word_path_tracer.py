@@ -46,6 +46,7 @@ def look_around(row_pos: int, col_pos: int, objective: str, grid: list[list])-> 
                 return positions[i]
     return None
 
+
 def trace_word_path(word: str, grid: list[list])-> list[list]:
     """_summary_:
             A function for searching if a word can be traced out in a grid of letters along horizontal or vertical directions
@@ -73,7 +74,6 @@ def trace_word_path(word: str, grid: list[list])-> list[list]:
                 break
         if first_pos:
             break
-
 
     if output:
         current_pos = output[0]
