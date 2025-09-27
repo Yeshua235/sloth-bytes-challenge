@@ -3,31 +3,27 @@ def check_up(letter_pos: list, grid: list[list])-> str:
 
     if (letter_pos[0] - 1) >= 0:
         return grid[letter_pos[0] - 1][letter_pos[1]]
-    else:
-        return None
+    return None
 
 def check_down(letter_pos: list, grid: list[list])-> str:
     """ return the element in the cell below the current cell """
 
     if (letter_pos[0] + 1) < len(grid):
         return grid[letter_pos[0] + 1][letter_pos[1]]
-    else:
-        return None
+    return None
 
 def check_right(letter_pos: list, grid: list[list])-> str:
     """ return the element in the cell to the right of the current cell """
 
     if (letter_pos[1] + 1) < len(grid[0]):
         return grid[letter_pos[0]][letter_pos[1] + 1]
-    else:
-        return None
+    return None
 
 def check_left(letter_pos: list, grid: list[list])-> str:
     """ return the element in the cell to the left of the current cell """
     if (letter_pos[1] - 1) >= 0:
         return grid[letter_pos[0]][letter_pos[1] - 1]
-    else:
-        return None
+    return None
 
 
 def look_around(row_pos: int, col_pos: int, objective: str, grid: list[list])-> list:
