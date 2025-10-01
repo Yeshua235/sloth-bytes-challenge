@@ -67,7 +67,7 @@ class DFS_frontier:
     def empty(self) -> bool:
         return len(self.frontier) == 0
 
-class BFS_frontier:
+class BFS_frontier(DFS_frontier):
     """
     _summary_:
         A class to represent the frontier (or open set) of nodes to be explored in the search algorithm.
@@ -82,12 +82,6 @@ class BFS_frontier:
         empty(self) -> bool ==> A function for checking if the frontier is empty
     """
 
-    def __init__(self):
-        self.frontier = []
-
-    def add(self, node: Node):
-        self.frontier.append(node)
-
     def remove(self) -> Node:
         if self.empty():
             raise Exception("Frontier is empty")
@@ -96,8 +90,6 @@ class BFS_frontier:
             self.frontier = self.frontier[1:]
             return node
 
-    def empty(self) -> bool:
-        return len(self.frontier) == 0
 
 def up(current_pos: list, grid: list[list])-> list:
     """ checks if the cell above current cell is a path or an obstacle """

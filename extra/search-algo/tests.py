@@ -32,7 +32,6 @@ maze_4 = [
   [1, 1, 1, 1, 1, 1, 0]
 ]
 
-search_solution = search_grid("dfs", [0, 0], maze_4)
+search_solution = search_grid("bfs", [0, 0], maze_4)
 
 display_solution(search_solution, maze_4)
-
